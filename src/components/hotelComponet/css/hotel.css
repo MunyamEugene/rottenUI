@@ -1,0 +1,41 @@
+.hotels{
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.hotel{
+    display: flex;
+    flex-flow: column;
+    border: solid 1px rgb(116, 96, 96);
+    width: 400px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.hotel-name{
+    display: flex; 
+}
+.hotel-name p{
+ margin-left: 10px;
+}
+.hotel-info{
+    display: flex;
+}
+.hotel-info p{
+ margin-left: 10px;
+}
+.service{
+    padding-left: 10px;
+    display: flex;
+}
+.votebtn{
+    height: 20px;
+    width: 200px;
+    background-color: #8f8fe7;
+    color: #fff;
+}
+.voted-services{
+    display: flex;
+    background-color: rgb(219, 219, 219);
+    flex-wrap: wrap;
+}
