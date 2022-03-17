@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { urls } from "../../helper/urls";
+import  urls from "../../helper/urls";
 import './popup.css';
 
-export const VoteComponent = ({state,closePopup,rateService,canselRate,saveRate,fetchServices})=>{
-    const {popup,badservices,ratedService,userReducer} = state;
-    const {email}=userReducer;
+const VoteComponent = ({state,closePopup,rateService,canselRate,saveRate,fetchServices})=>{
+    const {popupModel,badservices,ratedService,userInfo} = state;
+    const {email}=userInfo;
     const [checkedBoxes,setChecks]=useState([]);
     useEffect(()=>{
         fetchServices()
@@ -39,7 +39,7 @@ export const VoteComponent = ({state,closePopup,rateService,canselRate,saveRate,
              closePopup(false)
         }
         
-    return (popup.popup)?<div className="popup">
+    return (popupModel.popup)?<div className="popup">
             <div className="popup-content">
                 <div className="bad-service-list">
                {badservices.map((badservice,index)=>{
@@ -61,3 +61,5 @@ export const VoteComponent = ({state,closePopup,rateService,canselRate,saveRate,
         </div>:""
     
 }
+
+export default VoteComponent;

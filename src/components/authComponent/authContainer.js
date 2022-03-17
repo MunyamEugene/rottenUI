@@ -1,7 +1,7 @@
 import { connect } from "react-redux"
-import { urls } from "../../helper/urls"
+import urls from "../../helper/urls"
 import { authenticate,logoutUser } from "../../redux/actions/actions"
-import { AuthComponent } from "./authComponent"
+import AuthComponent from "./authComponent"
 
 const mapStateToProps=(state)=>({
     state

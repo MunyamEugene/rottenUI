@@ -1,6 +1,7 @@
-export const RatedServiceName=({service={}})=>{
+const RatedServiceName=({service={}})=>{
     return (
             <p>{service.name}</p>
 
     );
 }
+export default RatedServiceName;

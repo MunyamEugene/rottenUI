@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ServiceComponent = ({state})=>{
+const ServiceComponent = ({state})=>{
     const {badservices}=state;
     return(
         <ul>
@@ -8,3 +8,5 @@ export const ServiceComponent = ({state})=>{
         </ul>
     )
 }
+
+export default ServiceComponent;

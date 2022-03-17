@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ShowTotalComponent =({total,name,stars,location})=>{
+const ShowTotalComponent =({total,name,stars,location})=>{
 
     const mystyle =()=>({
       color: "white",
@@ -29,3 +29,5 @@ export const ShowTotalComponent =({total,name,stars,location})=>{
         </div>
     );
 }
+
+export default ShowTotalComponent;

@@ -1,4 +1,4 @@
-import {RatedServiceName} from './ratedServiceName';
+import RatedServiceName from './ratedServiceName';
 export const RatedServices = ({services=[]})=>{
     return(
             <div className='voted-services'>
@@ -13,3 +13,5 @@ export const RatedServices = ({services=[]})=>{
         
     );
 }
+
+export default RatedServices;

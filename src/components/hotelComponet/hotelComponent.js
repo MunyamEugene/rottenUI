@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import './css/hotel.css';
-import {RatedServices} from './ratedServices/ratedServices';
-import { ShowTotalComponent } from './ratedServices/showTotalComponent';
+import RatedServices from './ratedServices/ratedServices';
+import ShowTotalComponent from './ratedServices/showTotalComponent';
 
-export const HotelComponent = ({state,openPopup,fetchHotels})=>{
-    const {userReducer,hotels}=state; 
-    const {email_verified}=userReducer;
+const HotelComponent = ({state,openPopup,fetchHotels})=>{
+    const {userInfo,hotels}=state; 
+    const {email_verified}=userInfo;
 
     useEffect(()=>{
         fetchHotels();
@@ -33,3 +33,5 @@ export const HotelComponent = ({state,openPopup,fetchHotels})=>{
         </div>
     );
 }
+
+export default HotelComponent;

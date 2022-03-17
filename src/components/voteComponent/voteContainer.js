@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
-import { urls } from '../../helper/urls';
+import urls from '../../helper/urls';
 import { popup,ratedService,canselVote,create_vote, fetch_services } from '../../redux/actions/actions';
-import {VoteComponent} from './voteComponent';
+import VoteComponent from './voteComponent';
 
 const mapStateToProps = (state)=>({
     state

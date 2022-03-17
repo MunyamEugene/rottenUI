@@ -1,5 +1,5 @@
 import { connect } from "react-redux"
-import { ServiceComponent } from "./serviceComponent"
+import ServiceComponent from "./serviceComponent"
 const mapStateToProps = (state)=>({
     state
 });

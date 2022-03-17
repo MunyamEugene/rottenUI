@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import { fetch_hotels, popup } from "../../redux/actions/actions";
-import {HotelComponent} from './hotelComponent';
-import {urls} from '../../helper/urls'
+import HotelComponent from './hotelComponent';
+import urls from '../../helper/urls'
 
 const mapStateToProps = (state)=>({
 state
