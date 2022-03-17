@@ -1,8 +1,6 @@
-/* eslint-disable react/jsx-filename-extension */
-import React from 'react';
-import { AuthContainer } from './components/authComponent/authContainer';
-import { HotelContainer } from './components/hotelComponet/hotelContainer';
-import { VoteContainer } from './components/voteComponent/voteContainer';
+import AuthContainer from './components/authComponent/authContainer';
+import HotelContainer from './components/hotelComponet/hotelContainer';
+import VoteContainer from './components/voteComponent/voteContainer';
 import './index.css';
 
 const App = () => (

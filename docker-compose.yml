@@ -1,0 +1,28 @@
+
+version: '3.4'
+
+services:
+
+  rottenui: 
+    build: ./
+    image: munya250/rottenui
+    volumes:
+      - ./rotten
+    ports:
+      - "3000:3000"
+    depends_on:
+      - rottenback
+
+  rottenback:
+    image: munya250/rottenback
+    ports:
+      - "5000:5000"
+    depends_on: 
+     - db
+     
+  db:
+    image: postgres
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d/
+    ports: 
+     - "5432:5432"

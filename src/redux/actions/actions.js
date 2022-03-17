@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 import actionNames from './actionTypes';
 
 export const success_fetch_hotels = ({ hotels }) => ({

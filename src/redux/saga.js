@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 import { call, put, takeEvery } from 'redux-saga/effects';
 import { defaultUser } from '../helper/initstate';
 import { success_auth, success_fetch_hotels, success_fetch_services } from './actions/actions';

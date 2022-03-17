@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 const AuthComponent = ({ login, logout, state }) => {
   const { userInfo } = state;
@@ -21,4 +21,4 @@ const AuthComponent = ({ login, logout, state }) => {
   );
 };
 
-export default AuthComponent
+export default AuthComponent;

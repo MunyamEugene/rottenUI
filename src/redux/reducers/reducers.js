@@ -1,4 +1,3 @@
-/* eslint-disable default-param-last */
 import { initialState, defaultUser } from '../../helper/initstate';
 import actionNames from '../actions/actionTypes';
 
@@ -41,10 +40,10 @@ export const hotels = (state = [], action) => {
 export const badservices = (state = [], action) => {
   switch (action.type) {
     case actionNames.SUCCESS_SERVICES:
-      {
-      const {services}=action;
+    {
+      const { services } = action;
       return services.map((serv) => hotelService(serv, action));
-      }
+    }
     default:
       return state;
   }
