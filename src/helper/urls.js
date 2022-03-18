@@ -1,9 +1,10 @@
+const baseUrl = 'https://rottenback.herokuapp.com/';
 const urls = {
-  hotels: 'http://localhost:5000/api/hotel',
-  services: 'http://localhost:5000/api/service',
-  vote: 'http://localhost:5000/api/vote',
-  auth: 'http://localhost:5000/api/auth/success',
-  logout: 'http://localhost:5000/api/auth/logout',
+  hotels: `${baseUrl}api/hotel`,
+  services: `${baseUrl}api/service`,
+  vote: `${baseUrl}api/vote`,
+  auth: `${baseUrl}api/auth/success`,
+  logout: `${baseUrl}api/auth/logout`,
 };
 
 export default urls;
