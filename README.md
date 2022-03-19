@@ -1,9 +1,11 @@
+##  `visit hosted app via`
+[https://rotten5.herokuapp.com](https://rotten5.herokuapp.com)
 
-## Available Scripts
+##  `Available Scripts`
 
 In the project directory, you can run:
 
-### `jest`
+### `npm run start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
