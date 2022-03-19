@@ -1,7 +1,8 @@
-##  `visit hosted app via`
+###  `rotten`
+Rate hotels for their bad services
 [https://rotten5.herokuapp.com](https://rotten5.herokuapp.com)
 
-##  `Available Scripts`
+### `Available Scripts`
 
 In the project directory, you can run:
 
