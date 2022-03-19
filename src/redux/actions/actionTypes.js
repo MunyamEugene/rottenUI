@@ -14,5 +14,6 @@ const actionNames = {
   AUTH: 'AUTH',
   SUCCESS_LOGOUT: 'SUCCESS_LOGOUT',
   LOGOUT: 'LOGOUT',
+  SEARCH: 'SEARCH',
 };
 export default actionNames;

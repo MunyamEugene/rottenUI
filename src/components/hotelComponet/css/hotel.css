@@ -1,8 +1,8 @@
 .hotels{
-
     display: flex;
     flex-flow: column;
     align-items: center;
+    margin-top: 50px;
 }
 .hotel{
     display: flex;
@@ -14,6 +14,8 @@
 }
 .hotel-name{
     display: flex; 
+    font-family: 'Courier New', monospace;
+    font-weight: bolder;
 }
 .hotel-name p{
  margin-left: 10px;
@@ -36,6 +38,6 @@
 }
 .voted-services{
     display: flex;
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(245, 240, 240);
     flex-wrap: wrap;
 }

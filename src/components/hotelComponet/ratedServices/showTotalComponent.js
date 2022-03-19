@@ -1,12 +1,12 @@
-const ShowTotalComponent = ({
-  total, name, stars, location,
-}) => {
+const ShowTotalComponent = ({ hotel }) => {
+  const { name, services } = hotel;
+  const totalVotes = services.reduce((strt, curr) => strt + curr.votes, 0);
   const mystyle = () => ({
     color: 'white',
     backgroundColor: 'red',
     marginLeft: '5px',
     marginTop: 'auto',
-    width: `${total}px`,
+    width: `${totalVotes}px`,
     fontSize: '10pt',
     height: '15px',
     textAlign: 'left',
@@ -18,17 +18,7 @@ const ShowTotalComponent = ({
       <div className="hotel-name">
         <p>{name}</p>
         <p style={mystyle()}>
-          {(total)}
-        </p>
-      </div>
-      <div className="hotel-info">
-        <p>
-          Stars:
-          {stars}
-        </p>
-        <p>
-          Location:
-          {location}
+          {(totalVotes)}
         </p>
       </div>
     </div>

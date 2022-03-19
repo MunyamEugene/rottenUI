@@ -17,7 +17,6 @@ export const success_auth = (authData) => ({
   type: actionNames.SUCCESS_AUTH,
   user: authData,
 });
-
 // ###########################
 // SAGA ACTIONS
 // ###########################
