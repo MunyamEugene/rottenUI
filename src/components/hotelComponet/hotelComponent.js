@@ -10,8 +10,6 @@ const HotelComponent = ({ state, openPopup, fetchHotels }) => {
   const [allHtl, setHtl] = useState(hotels);
   useEffect(() => {
     fetchHotels();
-    // eslint-disable-next-line no-console
-    console.log(hotels);
   }, [fetchHotels]);
 
   const handleOnBtnClick = (hotel) => {

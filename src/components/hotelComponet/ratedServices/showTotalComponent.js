@@ -7,7 +7,7 @@ const ShowTotalComponent = ({ hotel }) => {
     marginLeft: '5px',
     marginTop: 'auto',
     width: `${totalVotes}px`,
-    fontSize: '10pt',
+    fontSize: '8pt',
     height: '15px',
     textAlign: 'left',
     paddingLeft: '0px',
